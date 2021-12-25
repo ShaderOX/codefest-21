@@ -1,9 +1,13 @@
 import { useState } from "react";
+import ReceiverMessage from "./ReceiverMessage";
+import Avatar from "./Avatar";
+import { SenderMessage } from "./SenderMessage";
+import TextForm from "./TextForm";
 
 const MainPane = ({ socket, className, ...props }) => {
   const [message, setMessage] = useState("");
 
-  const handleMessageSubmission = e => {
+  const handleMessageSubmission = (e) => {
     e.preventDefault();
 
     socket.emit("message", { payload: message });
@@ -11,17 +15,21 @@ const MainPane = ({ socket, className, ...props }) => {
   };
 
   return (
-    <div className="bg-blue-200 h-10">
-      this is the main panel
-      <form onSubmit={handleMessageSubmission}>
-        <input
-          type="text"
-          name="message"
-          placeholder="Type your message..."
-          onChange={e => setMessage(e.target.value)}
-        />
-      </form>
-    </div>
+    <>
+      <div className="container w-1/3 m-auto mt-10  bg-orange-100   rounded-bl-xl rounded-br-xl ">
+        <Avatar />
+        <SenderMessage />
+        <ReceiverMessage />
+        <SenderMessage />
+        <ReceiverMessage />
+        <ReceiverMessage />
+        <SenderMessage />
+        <SenderMessage />
+        <ReceiverMessage />
+
+        <TextForm />
+      </div>
+    </>
   );
 };
 

@@ -1,14 +1,29 @@
-const socketIO = require('socket.io');
+const express = require("express");
+const app = express();
+const http = require("http");
+const cors = require("cors");
+const { Server } = require("socket.io");
+app.use(cors());
 
-const socket = socketIO(8080, {
+const server = http.createServer(app);
+
+const io = new Server(server, {
   cors: {
-    origin: "*",
-    methods: ["GET", "POST"]
-  }
+    origin: "http://localhost:3000",
+    methods: ["GET", "POST"],
+  },
 });
 
-socket.on('connection', (client) => {
-  console.log("Connected to", client.id);
+io.on("connection", (socket) => {
+  console.log(`User Connected: ${socket.id}`);
+
+  socket.on("message", (data) => {
+    console.log(`${socket.id}: ${JSON.stringify(data, null, 2)}`);
+    socket.emit("receive-message", data);
+  });
+
 });
 
-console.log("Socket IO server running at PORT 8080");
+server.listen(8080, () => {
+  console.log("SERVER RUNNING");
+});

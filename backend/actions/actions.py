@@ -17,8 +17,9 @@ class ActionShowCategories(Action):
         
         with open('data/categories.txt', 'r') as f:
             categories = f.read()
-            dispatcher.utter_message(text=f"{categories}. Which one do you want to explore?")
-
+            jsonResponse = {'type':'list', 'listTitle': 'categories','list': [category.strip() for category in categories.split('\n')]}
+            print("Response: ", json.dumps(jsonResponse))
+            dispatcher.utter_message(text=json.dumps(jsonResponse))
         return []
 
 class ActionShowProductsInCategoryFromSlot(Action):
@@ -35,15 +36,20 @@ class ActionShowProductsInCategoryFromSlot(Action):
             found_cat = False
             with open(f'data/products.json', 'r') as f:
                 products = json.load(f)
+                products_json = {'type': 'product', 'listTitle': 'products' ,'list': []}
                 for product in products["products"]:
                     # ASAD
                     if product["category"].lower() == category.lower():
                         found_cat = True
                         return_str += f"{product['name']} {product['price']}\n"
+
+                        products_json['products'].append(product)
+
             if found_cat:
-                dispatcher.utter_message(text=return_str)
+                print(json.dumps(products_json))
+                dispatcher.utter_message(text=json.dumps(products_json))
             else:
-                dispatcher.utter_message(text="Sorry, We don't have any products in this category.")
+                dispatcher.utter_message(text=json.dumps({'type':'text', 'text':"Sorry, We don't have any products in this category."}))
             return []
 
 class ActionShowProductsInCategoryFromEntity(Action):

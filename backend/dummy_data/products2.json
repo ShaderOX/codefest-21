@@ -1,0 +1,53 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "name": "Cat Leash",
+        "price": "500",
+        "category": "Cat Products",
+        "totalSales": "13",
+        "src": ""
+      },
+      {
+        "id": "2",
+        "name": "Dog Leash",
+        "price": "1000",
+        "category": "Dog Products",
+        "totalSales": "22",
+        "src": ""
+      },
+      {
+        "id": "3",
+        "name": "Cat Feeding Bowl",
+        "price": "1500",
+        "category": "Cat Products",
+        "totalSales": "23",
+        "src": ""
+      },
+      {
+        "id": "4",
+        "name": "Dog Feeding Bowl",
+        "price": "1700",
+        "category": "Dog Products",
+        "totalSales": "15",
+        "src": ""
+      },
+      {
+        "id": "5",
+        "name": "Cat Food",
+        "price": "2500",
+        "category": "Cat Products",
+        "totalSales": "25",
+        "src": ""
+      },
+      {
+        "id": "6",
+        "name": "Dog Food",
+        "price": "2200",
+        "category": "Dog Products",
+        "totalSales": "21",
+        "src": ""
+      }
+    ]
+  }
+  

@@ -53,3 +53,27 @@ stories:
     - action: action_show_product_by_id
   
 
+  - story: refund
+    steps:
+    - intent: refund
+    - action: utter_refund
+  
+  - story: cancel
+    steps:
+    - intent: cancel
+    - action: utter_cancel
+  
+  - story: exchange
+    steps:
+    - intent: exchange
+    - action: utter_exchange
+  
+  - story: payment_method
+    steps:
+    - intent: payment_method
+    - action: utter_payment_method
+  
+  - story: out_of_stock
+    steps:
+    - intent: out_of_stock
+    - action: utter_out_of_stock

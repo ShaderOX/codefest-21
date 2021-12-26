@@ -99,7 +99,7 @@ class ActionShowProductById(Action):
         with open(f'data/products.json', 'r') as f:
             products = json.load(f)
             for product in products["products"]:
-                print(product["id"], product_id[3:])
+                print(product["id"], product_id[2:])
                 if (product["id"]) == (product_id[2:]):
                     found_product = True
                     products_json['list'].append(product)

@@ -82,10 +82,10 @@ responses:
   utter_exchange:
     - text: "As a customer you have the option of exchanging an eligible item instead of returning it for a refund."
 
-   utter_out_of_stock:
+  utter_out_of_stock:
     - text: "Sorry that the item that you need is out of stock. Underneath the size selection dropdown menu on our website, click on the  link that says Don't see your size?."
 
-   utter_payment_method:
+  utter_payment_method:
     - text: "Any pre-paid gift card with a Visa, Mastercard, American Express, or Discover logo / insignia on it will be processed like an actual credit / debit card and only one credit card can be used per order." 
 
 session_config:

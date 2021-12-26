@@ -56,9 +56,22 @@ const MainPane = ({ userId, className, ...props }) => {
     if (response.data.length === 0) {
       botMessage.data = "Sorry, I don't understand that.";
     } else {
-      botMessage.data = response.data[0].text;
+      try {
+        const jsonResponse = JSON.parse(response.data[0].text);
+        botMessage.type = jsonResponse.type;
+        if (jsonResponse.type === "text") {
+          botMessage.data = jsonResponse.text;
+        } else {
+          botMessage.data = {
+            listTitle: jsonResponse.listTitle,
+            list: jsonResponse.list,
+          };
+        }
+      } catch (err) {
+        botMessage.data = response.data[0].text;
+      }
     }
-
+    console.log({ botMessage });
     setMessages(prevState => [...prevState, botMessage]);
     setIsBotTyping(false);
   };

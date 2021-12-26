@@ -3,6 +3,7 @@ import ScrollToBottom, {
   useSticky,
 } from "react-scroll-to-bottom";
 import { formatTime } from "../utils/TimeFormatter";
+import ListMessage from "./ListMessage";
 import ProductMessage from "./ProductMessage";
 import ReceiverMessage from "./ReceiverMessage";
 import SenderMessage from "./SenderMessage";
@@ -30,6 +31,8 @@ const MessageArea = ({ messages, ...props }) => {
             );
           } else if (type === "product") {
             return <ProductMessage key={index} {...data} />;
+          } else if (type === "list") {
+            return <ListMessage listTitle={data.listTitle} list={data.list} />;
           }
         })}
         {!isStickyToBottom && (

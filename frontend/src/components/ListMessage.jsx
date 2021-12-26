@@ -1,10 +1,16 @@
 import Message from "./template/Message";
 
 // we have {name} {price}\n{name} {price}
-const ListMessage = ({ statement, ...props }) => {
+const ListMessage = ({ listTitle, list, ...props }) => {
+  console.log({ listTitle, list });
   return (
     <Message className="bg-orange-50 float-left p-4">
-      <div className="flex w-80 items-center my-1"></div>
+      <span className="font-semibold">{listTitle.capitalize()}</span>
+      <div className="flex flex-col mx-4">
+        {list.map(item => (
+          <span>{item}</span>
+        ))}
+      </div>
     </Message>
   );
 };

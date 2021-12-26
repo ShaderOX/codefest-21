@@ -1,0 +1,32 @@
+  version: "3.0"
+  nlu:
+  - intent: refund
+    examples: |
+      - can i get a refund
+      - can i return my order
+      - what is the return policy
+      - refund my money
+      - i want to return my purchase
+  - intent: cancel
+    examples: |
+      - can i cancel my order
+      - i want to delete my order
+      - cancel my order request
+      - i want to cancel my purchase
+  - intent: exchange
+    examples: |
+      - can i exchange my order
+      - i want to exchange my order
+      - can i exchange product
+  - intent: out_of_stock
+    examples: |
+      - the item i want is out of stock
+      - the product i want is out of stock
+      - when will you restock
+      - i cant find my size
+  - intent: payment_method
+    examples: |
+      - how can i pay
+      - what are the payment options
+      - do you accept credit card
+      - do you accept paypal

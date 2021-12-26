@@ -8,7 +8,34 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - give_time
+  - explore_store
+  - explore_store_category
+  - see_product
 
+actions:
+  - action_show_categories
+  - action_show_products_in_category
+entities:
+  - product_id
+  - product_category
+
+slots:
+  product_category:
+    type: categorical
+    values:
+      - pants
+      - shirts
+      - jackets
+      - shoes
+    mappings:
+      - type: from_entity
+        entity: product_category
+
+forms:
+  product_category_form:
+    required_slots:
+      - product_category
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -29,11 +56,14 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-form:
-  product_category_form:
-    required_slots:
-      - product_category
+  utter_categories:
+  - text: "Here are the categories pants, shirts, shoes and jackets."
 
+  utter_products:
+  - text: "Here are the products: blue shirt, green shirt etc"
+
+  utter_product:
+  - text: "Here is the product: blue shirt"
 
 session_config:
   session_expiration_time: 60

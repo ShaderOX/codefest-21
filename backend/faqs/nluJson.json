@@ -1,0 +1,30 @@
+{
+  "version": "3.0",
+  "nlu":
+    [
+      {
+        "intent": "refund",
+        "examples": "- can i get a refund\n- can i return my order\n- what is the return policy\n- refund my money\n- i want to return my purchase"
+      },
+      {
+        "intent": "cancel",
+        "examples": "- can i cancel my order\n- i want to delete my order\n- cancel my order request\n- i want to cancel my purchase"
+
+      },
+      {
+        "intent": "exchange",
+        "examples": "- can i exchange my order\n- i want to exchange my order\n- can i exchange product \n"
+
+      },
+      {
+        "intent": "out_of_stock",
+        "examples": "- the item i want is out of stock\n- the product i want is out of stock\n- when will you restock\n- i cant find my size"
+
+      },
+      {
+        "intent": "payment_method",
+        "examples": "- how can i pay\n- what are the payment options\n- do you accept credit card\n- do you accept paypal"
+
+      }
+    ]
+}

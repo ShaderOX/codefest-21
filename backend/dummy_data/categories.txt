@@ -1,0 +1,4 @@
+shirts
+pants
+shoes
+jackets

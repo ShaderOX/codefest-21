@@ -28,3 +28,12 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: lookup product
+  steps:
+  - intent: explore_store
+  - action: show_categories
+  - intent: explore_store_category
+  - action: show_products
+  - intent: see_product
+  - action: show_product

@@ -91,3 +91,42 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: explore_store
+  examples: |
+    - what are you guys selling?
+    - what are you selling?
+    - what are you selling today?
+    - what can I buy here?
+    - what do you have?
+    - show me what you have
+
+- intent: explore_store_category
+  examples: |
+    - I would like to see some [pants](product_category)
+    - I would like to see some [shirts](product_category)
+    - Show me some [shirts](product_category)
+    - Show me some [jackets](product_category)
+    - How about some [coats](product_category)
+
+- lookup: product_category
+  examples:
+    - pants
+    - shirts
+    - jackets
+
+- intent: see_product
+  examples: |
+    - show [p_1634821]{"entity": "productId"}
+    - show [p_1287432]{"entity": "productId"}
+    - show [p_093271]{"entity": "productId"}
+
+entities:
+  - productId:
+
+slots:
+  product_category:
+    type: text
+
+  productId:
+    type: text

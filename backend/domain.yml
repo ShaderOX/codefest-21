@@ -12,6 +12,11 @@ intents:
   - explore_store
   - explore_store_category
   - see_product
+  - refund
+  - cancel
+  - exchange
+  - payment_method
+  - out_of_stock
 
 actions:
   - action_show_categories
@@ -41,32 +46,47 @@ forms:
       - product_category
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: "Hey! How are you?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+    - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
+    - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "I am a bot, powered by Rasa."
 
   utter_categories:
-  - text: "Here are the categories pants, shirts, shoes and jackets."
+    - text: "Here are the categories pants, shirts, shoes and jackets."
 
   utter_products:
-  - text: "Here are the products: blue shirt, green shirt etc"
+    - text: "Here are the products: blue shirt, green shirt etc"
 
   utter_product:
-  - text: "Here is the product: blue shirt"
+    - text: "Here is the product: blue shirt"
+
+  utter_refund:
+    - text: "If you are not 100% satisfied with your purchase  you can return your item(s) for a full refund within 365 days of purchase."
+
+  utter_cancel:
+    - text: "Once an order has been placed, you can cancel it  before it has been dispatched for shipping."
+
+  utter_exchange:
+    - text: "As a customer you have the option of exchanging an eligible item instead of returning it for a refund."
+
+   utter_out_of_stock:
+    - text: "Sorry that the item that you need is out of stock. Underneath the size selection dropdown menu on our website, click on the  link that says Don't see your size?."
+
+   utter_payment_method:
+    - text: "Any pre-paid gift card with a Visa, Mastercard, American Express, or Discover logo / insignia on it will be processed like an actual credit / debit card and only one credit card can be used per order." 
 
 session_config:
   session_expiration_time: 60

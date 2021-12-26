@@ -35,13 +35,18 @@ class ActionShowProductsInCategory(Action):
             found_cat = False
             with open(f'data/products.json', 'r') as f:
                 products = json.load(f)
+                products_json = []
                 for product in products["products"]:
                     # ASAD
                     if product["category"].lower() == category.lower():
                         found_cat = True
                         return_str += f"{product['name']} {product['price']}\n"
+
+                        products_json.append(product)
+
             if found_cat:
-                dispatcher.utter_message(text=return_str)
+                print("JSON DATA", json.dumps(products_json))
+                dispatcher.utter_message(text=json.dumps(products_json))
             else:
                 dispatcher.utter_message(text="Sorry, We don't have any products in this category.")
             return []

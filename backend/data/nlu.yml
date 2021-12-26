@@ -1,6 +1,40 @@
 version: "3.0"
 
 nlu:
+- intent: refund
+  examples: |
+    - can i get a refund
+    - can i return my order
+    - what is the return policy
+    - refund my money
+    - i want to return my purchase
+
+- intent: cancel
+  examples: |
+    - can i cancel my order
+    - i want to delete my order
+    - cancel my order request
+    - i want to cancel my purchase
+
+- intent: exchange
+  examples: |
+    - can i exchange my order
+    - i want to exchange my order
+    - can i exchange product
+
+- intent: out_of_stock
+  examples: |
+    - the item i want is out of stock
+    - the product i want is out of stock
+    - when will you restock
+
+- intent: payment_method
+  examples: |
+    - how can i pay
+    - what are the payment options
+    - do you accept credit card
+    - do you accept paypal
+
 - intent: greet
   examples: |
     - hey
@@ -114,6 +148,10 @@ nlu:
     - Show me some [shirts](product_category)
     - Show me some [jackets](product_category)
     - How about some [coats](product_category)
+    - I want to buy some [shirts](product_category)
+    - I want to buy some [pants](product_category)
+    - I am looking for some [jackets](product_category)
+    - Could you show me some [jackets](product_category)
 
 - lookup: product_category
   examples: |
@@ -124,7 +162,10 @@ nlu:
     
 - intent: see_product
   examples: |
-    - show [p_1634821]{"entity": "productId"}
-    - show [p_1287432]{"entity": "productId"}
-    - show [p_093271]{"entity": "productId"}
+    - show [p_1]{"entity": "productId"}
+    - show [p_2]{"entity": "productId"}
+    - show [p_35]{"entity": "productId"}
+    - show [p_07]{"entity": "productId"}
+    - show [p_65]{"entity": "productId"}
+    - show [p_34]{"entity": "productId"}
 

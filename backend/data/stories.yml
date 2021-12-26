@@ -29,22 +29,20 @@ stories:
   - intent: deny
   - action: utter_goodbye
 
-# - story: path about time
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: give_time
-#   - action: action_show_time
-
-- story: lookup product
+- story: lookup category from store
   steps:
   - intent: explore_store
   - action: action_show_categories
   - action: product_category_form
   - active_loop: product_category_form
 
-- story: select a product
+- story: search product using category
+  steps: 
+  - intent: explore_store_category
+  - action: action_show_products_in_category_from_entity
+
+- story: show product by id
   steps:
-  - action: action_show_products_in_category
   - intent: see_product
-  - action: action_show_product
+  - action: action_show_product_by_id
+  

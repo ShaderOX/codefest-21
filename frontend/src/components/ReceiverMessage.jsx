@@ -1,16 +1,14 @@
-import React from "react";
+import Message from "./template/Message";
 
-function ReceiverMessage({ className, ...props }) {
+function ReceiverMessage({ text, timestamp, className, ...props }) {
   return (
-    <div>
-      {" "}
-      <div className="clearfix clear-both">
-        <div className="bg-gray-300 font-sans w-fit mx-4 my-2 p-2 rounded-tl-lg rounded-tr-lg rounded-br-lg object-left">
-          Hello buy from us please
-          <span className="text-gray-500 text-xs"> 02:33 am</span>
-        </div>
-      </div>
-    </div>
+    <Message className="bg-sky-100 float-left p-4 cursor-pointer">
+      <span className="font-semibold">Box Bot</span>
+      <span className="my-1">{text}</span>
+      <span className="text-gray-500 text-right text-xs mr-0 ml-auto">
+        {timestamp}
+      </span>
+    </Message>
   );
 }
 

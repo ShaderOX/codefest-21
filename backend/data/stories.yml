@@ -1,50 +1,54 @@
 version: "3.0"
 
 stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  # - story: path about time
+  #   steps:
+  #   - intent: greet
+  #   - action: utter_greet
+  #   - intent: give_time
+  #   - action: action_show_time
 
-# - story: path about time
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: give_time
-#   - action: action_show_time
+  - story: lookup category from store
+    steps:
+    - intent: explore_store
+    - action: action_show_categories
+    - action: product_category_form
+    - active_loop: product_category_form
 
-- story: lookup product
-  steps:
-  - intent: explore_store
-  - action: action_show_categories
-  - action: product_category_form
-  - active_loop: product_category_form
+  - story: search product using category
+    steps: 
+    - intent: explore_store_category
+    - action: action_show_products_in_category_from_entity
 
-- story: select a product
-  steps:
-  - action: action_show_products_in_category
-  - intent: see_product
-  - action: action_show_product
+  - story: show product by id
+    steps:
+    - intent: see_product
+    - action: action_show_product_by_id
+  

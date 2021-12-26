@@ -15,7 +15,10 @@ intents:
 
 actions:
   - action_show_categories
-  - action_show_products_in_category
+  - action_show_products_in_category_from_entity
+  - action_show_products_in_category_from_slot
+  - action_show_product_by_id
+
 entities:
   - product_id
   - product_category

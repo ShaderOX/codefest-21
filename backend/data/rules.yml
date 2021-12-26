@@ -27,4 +27,4 @@ rules:
     - active_loop: null
     - slot_was_set:
       - requested_slot: null
-    - action: action_show_products_in_category
+    - action: action_show_products_in_category_from_slot

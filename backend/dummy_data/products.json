@@ -1,60 +1,164 @@
 {
-    "products": [
-        {
-            "id": "1",
-            "name": "Blue Shirt",
-            "price": "1500",
-            "category": "Shirts",
-            "totalSales": "10"
-        },
-        {
-            "id": "2",
-            "name": "Red Shirt",
-            "price": "3000",
-            "category": "Shirts",
-            "totalSales": "20"
-        },
-        {
-            "id": "3",
-            "name": "Black Shoes",
-            "price": "2000",
-            "category": "Shoes",
-            "totalSales": "4"
-        },
-        {
-            "id": "4",
-            "name": "White Shoes",
-            "price": "4000",
-            "category": "Shoes",
-            "totalSales": "5"
-        },
-        {
-            "id": "5",
-            "name": "Black Pants",
-            "price": "2500",
-            "category": "Pants",
-            "totalSales": "9"
-        },
-        {
-            "id": "6",
-            "name": "White Pants",
-            "price": "3500",
-            "category": "Pants",
-            "totalSales": "19"
-        },
-        {
-            "id": "7",
-            "name": "Black Jacket",
-            "price": "4500",
-            "category": "Jackets",
-            "totalSales": "3"
-        },
-        {
-            "id": "8",
-            "name": "White Jacket",
-            "price": "5500",
-            "category": "Jackets",
-            "totalSales": "7"
-        }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "name": "Blue Shirt",
+      "price": "1500",
+      "category": "Shirts",
+      "totalSales": "10",
+      "src": "https://i.imgur.com/siwnKFG.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "Red Shirt",
+      "price": "3000",
+      "category": "Shirts",
+      "totalSales": "20",
+      "src": "https://cdn.pixabay.com/photo/2016/10/02/22/17/red-t-shirt-1710578_960_720.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Black Shoes",
+      "price": "2000",
+      "category": "Shoes",
+      "totalSales": "4",
+      "src": "https://purepng.com/public/uploads/large/purepng.com-black-men-shoesmen-shoesfashiondesignestyleplasticsrubberhuman-footmen-14215263910671afbz.png"
+    },
+    {
+      "id": "4",
+      "name": "White Shoes",
+      "price": "4000",
+      "category": "Shoes",
+      "totalSales": "5",
+      "src": "https://rukminim1.flixcart.com/image/880/1056/kgv5x8w0-0/shoe/w/r/k/110-asteroid-white-original-imafxyyddkwpkydx.jpeg?q=50"
+    },
+    {
+      "id": "5",
+      "name": "Black Pants",
+      "price": "2500",
+      "category": "Pants",
+      "totalSales": "9",
+      "src": "https://www.streetstore.pk/wp-content/uploads/2018/10/1-264.jpg"
+    },
+    {
+      "id": "6",
+      "name": "White Pants",
+      "price": "3500",
+      "category": "Pants",
+      "totalSales": "19",
+      "src": "https://www.seekpng.com/png/full/388-3888325_white-pants-png-straight-white-pants.png"
+    },
+    {
+      "id": "7",
+      "name": "Black Jacket",
+      "price": "4500",
+      "category": "Jackets",
+      "totalSales": "3",
+      "src": "https://www.seekpng.com/png/full/231-2311530_major-e-c-w-breathable-moisture-repellent-foul.png"
+    },
+    {
+      "id": "8",
+      "name": "White Jacket",
+      "price": "5500",
+      "category": "Jackets",
+      "totalSales": "7",
+      "src": "https://img.freepik.com/free-psd/white-jacket-floating-white_176382-1845.jpg?size=338&ext=jpg"
+    },
+    {
+      "id": "9",
+      "name": "Black Shirt",
+      "price": "1500",
+      "category": "Shirts",
+      "totalSales": "10",
+      "src": "https://img.freepik.com/free-photo/black-shirt_23-2147730454.jpg?size=338&ext=jpg"
+    },
+    {
+      "id": "10",
+      "name": "Burgundy Shirt",
+      "price": "2500",
+      "category": "Shirts",
+      "totalSales": "8",
+      "src": "https://www.asmc.com/media/image/25/b0/ce/15001-0_600x600.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Purple Shirt",
+      "price": "1200",
+      "category": "Shirts",
+      "totalSales": "4",
+      "src": "https://www.nicepng.com/png/full/165-1655416_convert-to-base64-t-shirt-purple-violet-t.png"
+    },
+    {
+      "id": "12",
+      "name": "Red Shoes",
+      "price": "6500",
+      "category": "Shoes",
+      "totalSales": "5",
+      "src": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+    },
+    {
+      "id": "13",
+      "name": "Suede Shoes",
+      "price": "500",
+      "category": "Shoes",
+      "totalSales": "13",
+      "src": ""
+    },
+    {
+      "id": "14",
+      "name": "Blue Pants",
+      "price": "2500",
+      "category": "Pants",
+      "totalSales": "17",
+      "src": "http://clipart-library.com/image_gallery/n832926.png"
+    },
+    {
+      "id": "15",
+      "name": "Grey Pants",
+      "price": "2000",
+      "category": "Pants",
+      "totalSales": "12",
+      "src": "https://target.scene7.com/is/image/Target/GUEST_28a8f4e8-50c3-4772-9fb0-ebbbca2a9ddd?wid=488&hei=488&fmt=pjpeg"
+    },
+    {
+      "id": "16",
+      "name": "Purple Jacket",
+      "price": "4500",
+      "category": "Jackets",
+      "totalSales": "8",
+      "src": "https://www.pikpng.com/pngl/m/264-2645501_hoodie-clipart-purple-jacket-hoodie-png-download.png"
+    },
+    {
+      "id": "17",
+      "name": "Maroon Jacket",
+      "price": "5500",
+      "category": "Jackets",
+      "totalSales": "2",
+      "src": "https://5.imimg.com/data5/VY/JM/FF/SELLER-69536136/men-red-jackets-500x500.jpg"
+    },
+    {
+      "id": "18",
+      "name": "Grey Shoes",
+      "price": "2000",
+      "category": "Shoes",
+      "totalSales": "22",
+      "src": "https://www.seekpng.com/png/full/486-4869143_new-balance-574-new-balance-574-grey-white.png"
+    },
+    {
+      "id": "19",
+      "name": "Grey Shirt",
+      "price": "1000",
+      "category": "Shirts",
+      "totalSales": "13",
+      "src": "https://purepng.com/public/uploads/large/purepng.com-black-polo-shirtpolo-shirtcottongarmentsfebrickolarround-kolarblack-1421526391866kcvux.png"
+    },
+    {
+      "id": "20",
+      "name": "Tangerine Shirt",
+      "price": "800",
+      "category": "Shirts",
+      "totalSales": "3",
+      "src": "https://www.pngkit.com/png/detail/604-6049155_orange-shirt-png-orange-t-shirt-png.png"
+    }
+  ]
 }

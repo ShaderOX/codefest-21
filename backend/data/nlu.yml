@@ -19,6 +19,7 @@ nlu:
 
 - intent: goodbye
   examples: |
+    - good afternoon
     - cu
     - good by
     - cee you later
@@ -38,8 +39,6 @@ nlu:
     - of course
     - that sounds good
     - correct
-    - That is right
-    - That's right
 
 - intent: deny
   examples: |
@@ -51,39 +50,39 @@ nlu:
     - no way
     - not really
 
-# - intent: mood_great
-#   examples: |
-#     - perfect
-#     - great
-#     - amazing
-#     - feeling like a king
-#     - wonderful
-#     - I am feeling very good
-#     - I am great
-#     - I am amazing
-#     - I am going to save the world
-#     - super stoked
-#     - extremely good
-#     - so so perfect
-#     - so good
-#     - so perfect
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
 
-# - intent: mood_unhappy
-#   examples: |
-#     - my day was horrible
-#     - I am sad
-#     - I don't feel very well
-#     - I am disappointed
-#     - super sad
-#     - I'm so sad
-#     - sad
-#     - very sad
-#     - unhappy
-#     - not good
-#     - not very good
-#     - extremly sad
-#     - so saad
-#     - so sad
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
 
 - intent: bot_challenge
   examples: |
@@ -91,6 +90,13 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: give_time
+  examples: |
+    - can you tell me what time it is
+    - tell me the time
+    - got the time
+    - what time is it
 
 - intent: explore_store
   examples: |
@@ -110,23 +116,15 @@ nlu:
     - How about some [coats](product_category)
 
 - lookup: product_category
-  examples:
+  examples: |
     - pants
     - shirts
     - jackets
-
+    - shoes
+    
 - intent: see_product
   examples: |
     - show [p_1634821]{"entity": "productId"}
     - show [p_1287432]{"entity": "productId"}
     - show [p_093271]{"entity": "productId"}
 
-entities:
-  - productId:
-
-slots:
-  product_category:
-    type: text
-
-  productId:
-    type: text

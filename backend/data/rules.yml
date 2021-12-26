@@ -11,3 +11,20 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Activate category form
+  steps:
+  - intent: explore_store
+  - action: action_show_categories
+  - action: product_category_form
+  - active_loop: product_category_form
+
+- rule: Deactivate
+  condition:
+    - active_loop: product_category_form
+  steps:
+    - action: product_category_form
+    - active_loop: null
+    - slot_was_set:
+      - requested_slot: null
+    - action: action_show_products_in_category

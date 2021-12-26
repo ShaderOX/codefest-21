@@ -6,7 +6,7 @@
         "price": "15000",
         "category": "Appliances",
         "totalSales": "22",
-        "src": ""
+        "src": "https://i.imgur.com/cxkogk0.jpg"
       },
       {
         "id": "2",
@@ -14,7 +14,7 @@
         "price": "45000",
         "category": "Appliances",
         "totalSales": "13",
-        "src": ""
+        "src": "https://i.imgur.com/Z62zfor.jpg"
       },
       {
         "id": "3",
@@ -22,7 +22,7 @@
         "price": "85000",
         "category": "Appliances",
         "totalSales": "17",
-        "src": ""
+        "src": "https://i.imgur.com/tiuLJNG.jpg"
       },
       {
         "id": "4",
@@ -30,7 +30,7 @@
         "price": "15000",
         "category": "Furniture",
         "totalSales": "33",
-        "src": ""
+        "src": "https://i.imgur.com/codenSR.png"
       },
       {
         "id": "5",
@@ -38,7 +38,7 @@
         "price": "33000",
         "category": "Furniture",
         "totalSales": "7",
-        "src": ""
+        "src": "https://i.imgur.com/TYcftJ8.jpg"
       },
       {
         "id": "6",
@@ -46,7 +46,7 @@
         "price": "12000",
         "category": "Furniture",
         "totalSales": "14",
-        "src": ""
+        "src": "https://i.imgur.com/oMviJop.jpg"
       }
     ]
   }

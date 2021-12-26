@@ -6,7 +6,7 @@
         "price": "500",
         "category": "Cat Products",
         "totalSales": "13",
-        "src": ""
+        "src": "https://i.imgur.com/S9CL2Zu.jpg"
       },
       {
         "id": "2",
@@ -14,7 +14,7 @@
         "price": "1000",
         "category": "Dog Products",
         "totalSales": "22",
-        "src": ""
+        "src": "https://i.imgur.com/SGar81O.jpg"
       },
       {
         "id": "3",
@@ -22,7 +22,7 @@
         "price": "1500",
         "category": "Cat Products",
         "totalSales": "23",
-        "src": ""
+        "src": "https://i.imgur.com/rzaeD5s.jpg"
       },
       {
         "id": "4",
@@ -30,7 +30,7 @@
         "price": "1700",
         "category": "Dog Products",
         "totalSales": "15",
-        "src": ""
+        "src": "https://i.imgur.com/pZslxrB.jpg"
       },
       {
         "id": "5",
@@ -38,7 +38,7 @@
         "price": "2500",
         "category": "Cat Products",
         "totalSales": "25",
-        "src": ""
+        "src": "https://i.imgur.com/QDFWq2h.jpg"
       },
       {
         "id": "6",
@@ -46,7 +46,7 @@
         "price": "2200",
         "category": "Dog Products",
         "totalSales": "21",
-        "src": ""
+        "src": "https://i.imgur.com/YF1CA7d.jpg"
       }
     ]
   }

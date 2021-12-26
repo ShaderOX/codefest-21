@@ -1,0 +1,53 @@
+{
+    "products": [
+      {
+        "id": "1",
+        "name": "Microwave Oven",
+        "price": "15000",
+        "category": "Appliances",
+        "totalSales": "22",
+        "src": ""
+      },
+      {
+        "id": "2",
+        "name": "Refrigerator",
+        "price": "45000",
+        "category": "Appliances",
+        "totalSales": "13",
+        "src": ""
+      },
+      {
+        "id": "3",
+        "name": "Air Conditioner",
+        "price": "85000",
+        "category": "Appliances",
+        "totalSales": "17",
+        "src": ""
+      },
+      {
+        "id": "4",
+        "name": "Arm Chair",
+        "price": "15000",
+        "category": "Furniture",
+        "totalSales": "33",
+        "src": ""
+      },
+      {
+        "id": "5",
+        "name": "Bed",
+        "price": "33000",
+        "category": "Furniture",
+        "totalSales": "7",
+        "src": ""
+      },
+      {
+        "id": "6",
+        "name": "Coffee Table",
+        "price": "12000",
+        "category": "Furniture",
+        "totalSales": "14",
+        "src": ""
+      }
+    ]
+  }
+  
